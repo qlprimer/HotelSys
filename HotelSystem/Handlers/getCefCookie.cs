@@ -6,8 +6,10 @@ using System.Text;
 
 namespace HotelSystem.Handlers
 {
-  
-        public class CookieVisitor : CefSharp.ICookieVisitor
+
+    //http://www.codebye.com/cefsharp-icookievisitor-read-cookie-value.html
+
+    public class CookieVisitor : CefSharp.ICookieVisitor
         {
             public event Action<CefSharp.Cookie> SendCookie;
             public bool Visit(CefSharp.Cookie cookie, int count, int total, ref bool deleteCookie)
